@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/thecomplex.ogg-cbef0ca7aa9d289d5ad78d6e6ab8c349.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/songs/thecomplex.ogg"
+dest_files=[ "res://.import/thecomplex.ogg-cbef0ca7aa9d289d5ad78d6e6ab8c349.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

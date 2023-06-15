@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/CheatCoder/CheatCode.gd" type="Script" id=1]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource( 1 )
+entries = [ 87, 87, 83, 83, 65, 68, 65, 68, 75, 74 ]

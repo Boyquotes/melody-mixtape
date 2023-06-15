@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dailybeetle.ogg-1116f95f81565fa6d2744d44a1333918.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/songs/dailybeetle.ogg"
+dest_files=[ "res://.import/dailybeetle.ogg-1116f95f81565fa6d2744d44a1333918.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

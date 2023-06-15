@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/error_005.ogg-d42484be57a1045240cb8dc5ae36cd59.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/menus/error_005.ogg"
+dest_files=[ "res://.import/error_005.ogg-d42484be57a1045240cb8dc5ae36cd59.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
