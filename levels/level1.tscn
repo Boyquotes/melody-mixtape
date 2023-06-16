@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://levels/music.gd" type="Script" id=1]
 [ext_resource path="res://assets/tiles/monochrome_tilemap_transparent_packed.png" type="Texture" id=2]
@@ -8,7 +8,7 @@
 [ext_resource path="res://player/hud.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/fonts/Kenney Mini.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://player/killzone.tscn" type="PackedScene" id=8]
-[ext_resource path="res://player/nextlevel.tscn" type="PackedScene" id=9]
+[ext_resource path="res://levels/complete.gd" type="Script" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 7 )
@@ -183,6 +183,9 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 0/z_index = 0
 
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 10, 103.108 )
+
 [node name="level1" type="Node2D"]
 
 [node name="instruction" type="Label" parent="."]
@@ -228,4 +231,13 @@ script = ExtResource( 1 )
 
 [node name="killzone" parent="." instance=ExtResource( 8 )]
 
-[node name="nextlevel" parent="." instance=ExtResource( 9 )]
+[node name="complete" type="Area2D" parent="."]
+position = Vector2( 42, 161 )
+script = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="complete"]
+position = Vector2( 453.962, -45.2548 )
+shape = SubResource( 19 )
+[connection signal="died" from="killzone" to="player" method="_on_killzone_died"]
+[connection signal="body_entered" from="complete" to="complete" method="_on_complete_body_entered"]
+[connection signal="complete" from="complete" to="hud" method="_on_complete_complete"]

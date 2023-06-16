@@ -2,7 +2,7 @@ extends Area2D
 
 # var currentSong = get_parent().get_node("music").currentSong
 
-signal next
+signal died
 
 func _on_Area2D_body_entered(body):
-	pass
+	emit_signal("died")

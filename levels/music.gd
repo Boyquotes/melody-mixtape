@@ -10,20 +10,20 @@ const RHINOCEROS = ["Rhinoceros",      126, "res://assets/audio/songs/rhinoceros
 const THECOMPLEX = ["The Complex",     104, "res://assets/audio/songs/thecomplex.ogg",	Color(1, 0.3, 0.3)]
 
 #onready var currentlevel = get_tree().current_scene.name
-onready var currentLevel = "level1"
+export var currentLevel = "level1"
 
 # Current Song
 func getCurrentSong():
 #	if currentLevel == str("level1"):
-	var currentSong = FUNNYSONG     
+	currentSong = FUNNYSONG     
 #	else:
-#		var currentSong = FUNNYSONG
+#		currentSong = FUNNYSONG
 
 	return currentSong
 
 func playCurrentSong():
-#	var song = ResourceLoader.load(currentSong[2])
-#	self.stream = song
+	var song = ResourceLoader.load(currentSong[2])
+	self.stream = song
 	self.play()
 
 export(Array) var currentSong = getCurrentSong()

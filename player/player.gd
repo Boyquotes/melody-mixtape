@@ -146,6 +146,6 @@ func getInputAxis():
 #	axis = axis.normalized()
 
 
-func _on_Area2D_died():
+func _on_killzone_died():
 	position = Vector2(42, 161)
 	print("absolute bozoz")
